@@ -1,5 +1,5 @@
 import time
-from paramiko import client
+from paramiko import client # type: ignore
 from getpass import getpass
 
 hostname = '192.168.40.10'
@@ -24,6 +24,6 @@ device_access.send("terminal len 0\n") #it will extend termianl to show more con
 device_access.send("show run\n")
 time.sleep(5) #it is wait for 5 sec to show up all exicuted commends
 output = device_access.recv(65535)  # store the output variable to output. recive the data in byte formate
-print(output.decode()) #.decode is allign use out put structured.
+print(output.decode()) #.decode is allign use out put structured, human readable formate.
 
 ssh_client.close() #after configuration you close ssh connection
