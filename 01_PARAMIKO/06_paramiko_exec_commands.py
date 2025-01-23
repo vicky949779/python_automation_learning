@@ -13,8 +13,8 @@ if not username:
 
 password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "123" 
 
-cmd_switch_01 = ['sh version1234'] 
-# cmd_switch_02 = ['sh version']
+cmd_switch_01 = ['sh version12'] 
+cmd_switch_02 = ['sh version']
 
 def exec_cmd_exicuter(hostname, commands): 
     print(f"connecting to the device {hostname}..... ") 
@@ -37,4 +37,4 @@ def exec_cmd_exicuter(hostname, commands):
             print(f"Error Occurred: {err}")
 
 exec_cmd_exicuter('192.168.40.10',cmd_switch_01) 
-# exec_cmd_exicuter('192.168.40.20',cmd_switch_02)
+exec_cmd_exicuter('192.168.40.20',cmd_switch_02)
