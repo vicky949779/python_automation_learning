@@ -6,7 +6,7 @@ import paramiko.util # type: ignore
 from paramiko import client, ssh_exception, RSAKey # type: ignore  # Add for RSAKey for supported in paramiko private key of key_file path
 from getpass import getpass
 import socket
-paramiko.util.log_to_file("paramiko.log", level="DEBUG")  #This will create a paramiko logfile you will get some inforamtio to that.
+#paramiko.util.log_to_file("paramiko.log", level="DEBUG")  #This will create a paramiko logfile you will get some inforamtio to that.it has create once for get a paramiko.log file purpose.
 
 username = 'admin2'
 csr_cmd = ['config t', 'int lo1001', 'ip address 1.1.1.1 255.255.255.255', 'end']
@@ -49,3 +49,8 @@ def cisco_cmd_executor(hostname, commands):
         # traceback.print_exception(*sys.exc_info())
 
 cisco_cmd_executor('192.168.40.10', csr_cmd)
+
+################### important ########################
+"""
+must you have to create private key for linux then add that pub key to cisco device then you run this script file
+"""
