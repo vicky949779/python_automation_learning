@@ -50,11 +50,11 @@ def cisco_cmd_exicuter(hostname, commands):
     except socket.gaierror: #it is used for hostname error time using.
         print("\U00002757\U00002757\U00002757Check the hostname \U00002757\U00002757\U00002757")
     except ssh_exception.NoValidConnectionsError: # it is you enter wrong ip that time come error show
-        print("\U00002757\U00002757\U00002757Invalid ip Address\U00002757\U00002757\U00002757")
+        print("\U00002757\U00002757\U00002757SSH Port not reachable\U00002757\U00002757\U00002757")
     except:
         print("\U00002757\U00002757\U00002757Exception Occured \U00002757\U00002757\U00002757")
         print(sys.exc_info()) # it will show exception error found to tell.
         #traceback.print_exception(*sys.exc_info()) # this line will show what error in each devices to seperate.
 
-cisco_cmd_exicuter('19a2.168.40.10',cmd_switch_01) # i change hostname with error
-cisco_cmd_exicuter('192.168.40.30',cmd_switch_02) 
+cisco_cmd_exicuter('192.168.40.10',cmd_switch_01) # i change hostname with error
+cisco_cmd_exicuter('192.168.40.20',cmd_switch_02) 

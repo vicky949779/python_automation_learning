@@ -1,0 +1,35 @@
+DEB [20250124-12:17:22.225] thr=1   paramiko.transport: starting thread (client mode): 0xcfe96560
+DEB [20250124-12:17:22.225] thr=1   paramiko.transport: Local version/idstring: SSH-2.0-paramiko_3.5.0
+DEB [20250124-12:17:22.229] thr=1   paramiko.transport: Remote version/idstring: SSH-2.0-Cisco-1.25
+INF [20250124-12:17:22.229] thr=1   paramiko.transport: Connected (version 2.0, client Cisco-1.25)
+DEB [20250124-12:17:22.232] thr=1   paramiko.transport: === Key exchange possibilities ===
+DEB [20250124-12:17:22.232] thr=1   paramiko.transport: kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1, diffie-hellman-group1-sha1
+DEB [20250124-12:17:22.233] thr=1   paramiko.transport: server key: ssh-rsa
+DEB [20250124-12:17:22.233] thr=1   paramiko.transport: client encrypt: aes128-ctr, aes192-ctr, aes256-ctr, aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+DEB [20250124-12:17:22.233] thr=1   paramiko.transport: server encrypt: aes128-ctr, aes192-ctr, aes256-ctr, aes128-cbc, 3des-cbc, aes192-cbc, aes256-cbc
+DEB [20250124-12:17:22.233] thr=1   paramiko.transport: client mac: hmac-sha1, hmac-sha1-96
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: server mac: hmac-sha1, hmac-sha1-96
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: client compress: none
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: server compress: none
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: client lang: <none>
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: server lang: <none>
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: kex follows: False
+DEB [20250124-12:17:22.234] thr=1   paramiko.transport: === Key exchange agreements ===
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: Kex: diffie-hellman-group-exchange-sha1
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: HostKey: ssh-rsa
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: Cipher: aes128-ctr
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: MAC: hmac-sha1
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: Compression: none
+DEB [20250124-12:17:22.235] thr=1   paramiko.transport: === End of kex handshake ===
+DEB [20250124-12:17:22.237] thr=1   paramiko.transport: Got server p (2048 bits)
+DEB [20250124-12:17:22.325] thr=1   paramiko.transport: kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEB [20250124-12:17:22.325] thr=1   paramiko.transport: Switch to new keys ...
+DEB [20250124-12:17:22.326] thr=2   paramiko.transport: Adding ssh-rsa host key for 192.168.40.10: b'330368f41499b03aec88d65b8e44e4a1'
+DEB [20250124-12:17:22.456] thr=2   paramiko.transport: Trying discovered key b'204e42eeabed4b8faf1ce1842f57f0df' in /home/vicky/.ssh/id_rsa
+DEB [20250124-12:17:22.549] thr=1   paramiko.transport: userauth is OK
+DEB [20250124-12:17:22.549] thr=1   paramiko.transport: Finalizing pubkey algorithm for key of type 'ssh-rsa'
+DEB [20250124-12:17:22.549] thr=1   paramiko.transport: Our pubkey algorithm list: ['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa']
+DEB [20250124-12:17:22.549] thr=1   paramiko.transport: Server did not send a server-sig-algs list; defaulting to our first preferred algo ('rsa-sha2-512')
+DEB [20250124-12:17:22.549] thr=1   paramiko.transport: NOTE: you may use the 'disabled_algorithms' SSHClient/Transport init kwarg to disable that or other algorithms if your server does not support them!
+INF [20250124-12:17:22.553] thr=1   paramiko.transport: Auth banner: b'\r\n**************************************************************************\r\n* IOSv - Cisco Systems Confidential                                      *\r\n*                                                                        *\r\n* This software is provided as is without warranty for internal          *\r\n* development and testing purposes only under the terms of the Cisco     *\r\n* Early Field Trial agreement.  Under no circumstances may this software *\r\n* be used for production purposes or deployed in a production            *\r\n* environment.                                                           *\r\n*                                                                        *\r\n* By using the software, you agree to abide by the terms and conditions  *\r\n* of the Cisco Early Field Trial Agreement as well as the terms and      *\r\n* conditions of the Cisco End User License Agreement at                  *\r\n* http://www.cisco.com/go/eula                                           *\r\n*                                                                        *\r\n* Unauthorized use or distribution of this software is expressly         *\r\n* Prohibited.                                                            *\r\n**************************************************************************'
+INF [20250124-12:17:25.028] thr=1   paramiko.transport: Authentication (publickey) failed.
