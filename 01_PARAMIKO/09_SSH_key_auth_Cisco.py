@@ -19,7 +19,7 @@ def cisco_cmd_executor(hostname, commands):
         ssh_client.connect(hostname=hostname, port=22, username=username, look_for_keys=True,
                            allow_agent=True,
                            pkey=key_file, # mention key_file int private key file path
-                           disabled_algorithms=dict(pubkeys=['rsa-sha2-512', 'rsa-sha2-256'])) # it has must to support remote ssh of private key authentication.
+                           disabled_algorithms=dict(pubkeys=['rsa-sha2-512', 'rsa-sha2-256'])) # it has must, to support remote ssh of private key authentication.
 
         print(f"Connected to the device {hostname}")
         device_access = ssh_client.invoke_shell()

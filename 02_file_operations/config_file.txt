@@ -1,0 +1,5 @@
+conf t
+int lo 1
+ip add 1.1.1.1 255.255.255.255
+no sh
+exit

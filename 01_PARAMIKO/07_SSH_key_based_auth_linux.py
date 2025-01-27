@@ -1,7 +1,7 @@
-# This script runonly for linux
+# This script run only for linux
 
 import time
-from paramiko import client, RSAKey  # insert RSAKey to support ssh authentication
+from paramiko import client, RSAKey # type: ignore # insert RSAKey to support ssh authentication
 from getpass import getpass
 
 linux_cmd = ['ls -larth', 'echo $USER', 'hostname', 'sdfgh']
