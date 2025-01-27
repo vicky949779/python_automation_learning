@@ -1,0 +1,26 @@
+
+**************************************************************************
+* IOSv - Cisco Systems Confidential                                      *
+*                                                                        *
+* This software is provided as is without warranty for internal          *
+* development and testing purposes only under the terms of the Cisco     *
+* Early Field Trial agreement.  Under no circumstances may this software *
+* be used for production purposes or deployed in a production            *
+* environment.                                                           *
+*                                                                        *
+* By using the software, you agree to abide by the terms and conditions  *
+* of the Cisco Early Field Trial Agreement as well as the terms and      *
+* conditions of the Cisco End User License Agreement at                  *
+* http://www.cisco.com/go/eula                                           *
+*                                                                        *
+* Unauthorized use or distribution of this software is expressly         *
+* Prohibited.                                                            *
+**************************************************************************
+switch_02#terminal len 0
+switch_02#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch_02(config)#int lo 1
+switch_02(config-if)#ip add 1.1.1.1 255.255.255.255
+switch_02(config-if)#no sh
+switch_02(config-if)#exit
+switch_02(config)#

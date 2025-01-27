@@ -36,7 +36,7 @@ def cisco_cmd_exicuter(hostname, commands): #now using to function to pass param
         output = device_access.recv(65535)
         print(output.decode(), end='' ) 
 
-    device_access.send("sh run int lo1\n")
+    device_access.send("sh ip int br\n")
     time.sleep(2)
     output = device_access.recv(65535)
     print(output.decode())
