@@ -16,11 +16,17 @@
 * Unauthorized use or distribution of this software is expressly         *
 * Prohibited.                                                            *
 **************************************************************************
-switch_02#terminal len 0
-switch_02#conf t
+switch_01#terminal len 0
+switch_01#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
-switch_02(config)#int lo 1
-switch_02(config-if)#ip add 1.1.1.1 255.255.255.255
-switch_02(config-if)#no sh
-switch_02(config-if)#exit
-switch_02(config)#
+switch_01(config)#int lo 1
+switch_01(config-if)#ip add 1.1.1.1 255.255.255.255
+switch_01(config-if)#no sh
+switch_01(config-if)#end
+switch_01#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch_01(config)#int lo 10
+switch_01(config-if)#ip add 1.1.1.2 255.255.255.255
+switch_01(config-if)#no sh
+switch_01(config-if)#end
+switch_01#
