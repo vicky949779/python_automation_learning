@@ -56,5 +56,5 @@ def cisco_cmd_exicuter(hostname, commands):
         print(sys.exc_info()) # it will show exception error found to tell.
         #traceback.print_exception(*sys.exc_info()) # this line will show what error in each devices to seperate.
 
-cisco_cmd_exicuter('192.168.40.10',cmd_switch_01) # i change hostname with error
+cisco_cmd_exicuter('192.168.40.30',cmd_switch_01) # i change hostname with error
 cisco_cmd_exicuter('192.168.40.20',cmd_switch_02) 

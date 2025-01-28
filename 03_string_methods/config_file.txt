@@ -1,0 +1,10 @@
+conf t
+int lo 1
+ip add 1.1.1.1 255.255.255.255
+no sh
+end
+conf t
+int lo 10
+ip add 1.1.1.2 255.255.255.255
+no sh
+end

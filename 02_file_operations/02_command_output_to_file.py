@@ -13,16 +13,16 @@ if not username:
     username = 'admin'
     print(f"No username provided, considering default username {username}")
 
-password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "123"
+password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "C1sco12345"
 
 cmd_switch_01 = ['sh run']
-cmd_switch_02 = ['sh run']
+# cmd_switch_02 = ['sh run']
 
 def cisco_cmd_exicuter(hostname, commands):
     try:
         print(f"connecting to the device {hostname}..... ")
         now = datetime.datetime.now().replace(microsecond=0)  # --> This set now the time and date with microsecond
-        current_conf_file = f"{now}_{hostname}.txt"  #---> This create a file current date and time with each hostname in text file formate
+        current_conf_file = f"{now}_{hostname}.json"  #---> This create a file current date and time with each hostname in text file formate
         ssh_client = client.SSHClient()
         ssh_client.set_missing_host_key_policy(client.AutoAddPolicy())
         ssh_client.connect(hostname=hostname,
@@ -54,5 +54,5 @@ def cisco_cmd_exicuter(hostname, commands):
         print("\U00002757\U00002757\U00002757Exception Occured \U00002757\U00002757\U00002757")
         print(sys.exc_info())
 
-cisco_cmd_exicuter('192.168.40.10', cmd_switch_01)
-cisco_cmd_exicuter('192.168.40.20', cmd_switch_02)
+cisco_cmd_exicuter('devnetsandboxiosxe.cisco.com', cmd_switch_01)
+# cisco_cmd_exicuter('192.168.40.20', cmd_switch_02)
