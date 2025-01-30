@@ -12,7 +12,7 @@ if not username:
     username = 'admin'
     print(f"No username provided, considering default username {username}")
 
-password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "123"
+password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "Admin_1234!"
 
 # cmd_switch_01 = ['sh run']
 # cmd_switch_02 = ['sh run']
@@ -59,5 +59,6 @@ def cisco_cmd_exicuter(hostname, commands):
         print("\U00002757\U00002757\U00002757Exception Occured \U00002757\U00002757\U00002757")
         print(sys.exc_info())
 
-cisco_cmd_exicuter('192.168.40.10', new_cmd)
-cisco_cmd_exicuter('192.168.40.20', new_cmd)
+# cisco_cmd_exicuter('192.168.40.10', new_cmd)
+# cisco_cmd_exicuter('192.168.40.20', new_cmd)
+cisco_cmd_exicuter('sbx-nxos-mgmt.cisco.com', new_cmd)

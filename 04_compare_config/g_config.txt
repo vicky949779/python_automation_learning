@@ -1,0 +1,12 @@
+show ip interface brief
+
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Lo0                  192.168.1.1     protocol-down/link-down/admin-up   
+Lo1                  1.1.1.1         protocol-up/link-up/admin-up       
+Lo2                  10.0.0.2        protocol-up/link-up/admin-up       
+Lo100                10.10.20.95     protocol-up/link-up/admin-up       
+Lo101                10.10.20.1      protocol-up/link-up/admin-up       
+
+nxos# 

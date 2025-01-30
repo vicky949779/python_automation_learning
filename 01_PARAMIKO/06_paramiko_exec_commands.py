@@ -11,10 +11,10 @@ if not username:
     username = 'admin'
     print(f"No username provided, considering default username {username}")
 
-password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "123" 
+password = getpass(f"\U0001F511 Enter password of the user {username}: ") or "Admin_1234!" 
 
-cmd_switch_01 = ['sh version12'] 
-cmd_switch_02 = ['sh version']
+# cmd_switch_01 = ['sh version12'] 
+cmd_switch_02 = ['show version']
 
 def exec_cmd_exicuter(hostname, commands): 
     print(f"connecting to the device {hostname}..... ") 
@@ -36,5 +36,6 @@ def exec_cmd_exicuter(hostname, commands):
         if err:
             print(f"Error Occurred: {err}")
 
-exec_cmd_exicuter('192.168.40.10',cmd_switch_01) 
-exec_cmd_exicuter('192.168.40.20',cmd_switch_02)
+# exec_cmd_exicuter('192.168.40.10',cmd_switch_01) 
+# exec_cmd_exicuter('192.168.40.20',cmd_switch_02)
+exec_cmd_exicuter('sbx-nxos-mgmt.cisco.com',cmd_switch_02)

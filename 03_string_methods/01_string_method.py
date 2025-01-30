@@ -63,12 +63,12 @@
 '''split'''
 users = 'user1, user2, user3'  
 user_list = users.split(', ')  #--> this also will be returning the multiple users in the list.
-# print(user_list)
-# for user in user_list:
-#     print(f"Username is: {user}")
+print(user_list)
+for user in user_list:
+    print(f"Username is: {user}")
 ##########################################################
 '''splitlines'''
-# print("user1\nuser2\nuser3".splitlines()) #----> This also will be returning the multiple users in the list.
+print("user1\nuser2\nuser3".splitlines()) #----> This also will be returning the multiple users in the list.
 
 ##########################################################
 '''translate'''
@@ -78,6 +78,6 @@ user_list = users.split(', ')  #--> this also will be returning the multiple use
 ##########################################################
 
 '''zfill'''
-print('abc'.zfill(5)) # ---> This will add aditional two zeros, ex: 00abc
+# print('abc'.zfill(5)) # ---> This will add aditional two zeros, ex: 00abc
 
 
