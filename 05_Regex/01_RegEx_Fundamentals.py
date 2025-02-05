@@ -3,6 +3,8 @@
 # |           --> This mean 'or'
 # ()          --> This means group
 # \.          --> This will help to find '.' ex: you search cisco.com that time you can search 'cisco.' # '.' search '.' in easy
+# \S          --> (Uppercase S) → Matches Non-Whitespace Characters
+# \s          --> (Lowercase s) → Matches Whitespace Characters
 # \n          --> Matches a newline character (line break).
 # \B          --> Match with center character. ex: aaaaciscobbbbb   ---> match with 'cisco'  
 # \b          --> Matches the empty string, but only at the beginning or end of a word.print once only
