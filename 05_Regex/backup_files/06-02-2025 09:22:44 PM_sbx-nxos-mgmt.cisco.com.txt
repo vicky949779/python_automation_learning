@@ -27,43 +27,14 @@ http://www.gnu.org/licenses/lgpl.html
 *  Cisco in writing.                                                      *
 ***************************************************************************
 nxos# terminal len 0
-nxos# show version
-Cisco Nexus Operating System (NX-OS) Software
-TAC support: http://www.cisco.com/tac
-Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
-Copyright (c) 2002-2023, Cisco Systems, Inc. All rights reserved.
-The copyrights to certain works contained herein are owned by
-other third parties and are used and distributed under license.
-Some parts of this software are covered under the GNU Public
-License. A copy of the license is available at
-http://www.gnu.org/licenses/gpl.html.
+nxos# show ip interface brief
 
-Nexus 9000v is a demo version of the Nexus Operating System
-
-Software
-  BIOS: version 
-  NXOS: version 10.3(3) [Feature Release]
-  BIOS compile time:  
-  NXOS image file is: bootflash:///nxos64-cs.10.3.3.F.bin
-  NXOS compile time:  4/30/2023 12:00:00 [05/03/2023 12:18:42]
-
-Hardware
-  cisco Nexus9000 C9300v Chassis 
-  Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz with 16384716 kB of memory.
-  Processor Board ID 9M82ZHV54TR
-  Device name: nxos
-  bootflash:    4287040 kB
-
-Kernel uptime is 0 day(s), 21 hour(s), 19 minute(s), 9 second(s)
-
-Last reset 
-  Reason: Unknown
-  System version: 
-  Service: 
-
-plugin
-  Core Plugin, Ethernet Plugin
-
-Active Package(s):
-        
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Vlan1                192.0.2.2       protocol-up/link-up/admin-up       
+Vlan2003             10.0.0.1        protocol-down/link-down/admin-down 
+Lo120                10.10.10.150    protocol-up/link-up/admin-up       
+Eth1/5               192.0.2.1       protocol-down/link-down/admin-down 
+Eth1/10              192.0.3.1       protocol-down/link-down/admin-down 
+Eth1/11              192.0.2.1       protocol-down/link-down/admin-down 
 nxos# 
