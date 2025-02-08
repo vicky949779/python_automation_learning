@@ -1,0 +1,744 @@
+
+===== Show version  =====
+<multi-routing-engine-results>
+  <multi-routing-engine-item>
+    <re-name>fpc0</re-name>
+    <software-information>
+      <host-name>vqfx-re</host-name>
+      <product-model>vqfx-10000</product-model>
+      <product-name>vqfx-10000</product-name>
+      <junos-version>18.1R1.9</junos-version>
+      <junos-edition>limited</junos-edition>
+      <package-information>
+        <name>junos</name>
+        <comment>JUNOS Base OS boot [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jbase</name>
+        <comment>JUNOS Base OS Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jcrypto</name>
+        <comment>JUNOS Crypto Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jdocs</name>
+        <comment>JUNOS Online Documentation [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jkernel</name>
+        <comment>JUNOS Kernel Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jpfe</name>
+        <comment>JUNOS Packet Forwarding Engine Support (qfx-10-f) [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jroute</name>
+        <comment>JUNOS Routing Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jsd</name>
+        <comment>JUNOS jsd [i386-18.1R1.9-jet-1]</comment>
+      </package-information>
+      <package-information>
+        <name>jsdn-i386</name>
+        <comment>JUNOS SDN Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jswitch</name>
+        <comment>JUNOS Enterprise Software Suite [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>jweb</name>
+        <comment>JUNOS Web Management [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>py-base-i386</name>
+        <comment>JUNOS py-base-i386 [18.1R1.9]</comment>
+      </package-information>
+      <package-information>
+        <name>py-extensions-i386</name>
+        <comment>JUNOS py-extensions-i386 [18.1R1.9]</comment>
+      </package-information>
+    </software-information>
+  </multi-routing-engine-item>
+</multi-routing-engine-results>
+
+
+===== Show interfaces terse  =====
+<interface-information style="terse">
+  <physical-interface>
+    <name>
+gr-0/0/0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+bme0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+    <logical-interface>
+      <name>
+bme0.0
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+up
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+128.0.0.1/2
+</ifa-local>
+        </interface-address>
+        <interface-address>
+          <ifa-local emit="emit">
+128.0.0.4/2
+</ifa-local>
+        </interface-address>
+        <interface-address>
+          <ifa-local emit="emit">
+128.0.0.16/2
+</ifa-local>
+        </interface-address>
+        <interface-address>
+          <ifa-local emit="emit">
+128.0.0.63/2
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+cbp0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+dsc
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+    <logical-interface>
+      <name>
+em0.0
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+up
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+192.168.40.151/24
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em1
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <logical-interface>
+      <name>
+em1.0
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+down
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+169.254.0.2/24
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em2
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <logical-interface>
+      <name>
+em2.32768
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+down
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+192.168.1.2/24
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em3
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em4
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <logical-interface>
+      <name>
+em4.32768
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+down
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+192.0.2.2/24
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em5
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em6
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em7
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em8
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em9
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em10
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em11
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+esi
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+gre
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+ipip
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+irb
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+jsrv
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+    <logical-interface>
+      <name>
+jsrv.1
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+up
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+        <interface-address>
+          <ifa-local emit="emit">
+128.0.0.127/2
+</ifa-local>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+lo0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+    <logical-interface>
+      <name>
+lo0.0
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+up
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+      </address-family>
+      <address-family>
+        <address-family-name>
+inet6
+</address-family-name>
+        <interface-address>
+          <ifa-local>
+fe80::205:860f:fc71:9700
+</ifa-local>
+          <ifa-destination emit="emit">
+</ifa-destination>
+        </interface-address>
+      </address-family>
+    </logical-interface>
+    <logical-interface>
+      <name>
+lo0.16385
+</name>
+      <admin-status>
+up
+</admin-status>
+      <oper-status>
+up
+</oper-status>
+      <filter-information>
+</filter-information>
+      <address-family>
+        <address-family-name>
+inet
+</address-family-name>
+      </address-family>
+    </logical-interface>
+  </physical-interface>
+  <physical-interface>
+    <name>
+lsi
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+mtun
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+pimd
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+pime
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+pip0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+tap
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+vme
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+  </physical-interface>
+  <physical-interface>
+    <name>
+vtep
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+  </physical-interface>
+</interface-information>
+
+
+===== Show LLDP neighbors  =====
+<lldp-neighbors-information style="brief">
+</lldp-neighbors-information>
+
+
+===== Show virtual-chassis  =====
+<virtual-chassis-information>
+  <virtual-chassis-id-information>
+    <virtual-chassis-id>6c89.751e.e97c</virtual-chassis-id>
+    <virtual-chassis-mode>Enabled</virtual-chassis-mode>
+  </virtual-chassis-id-information>
+  <member-list style="single-slot">
+    <member>
+      <member-status>Prsnt</member-status>
+      <member-id>0</member-id>
+      <fpc-slot>(FPC 0)</fpc-slot>
+      <member-serial-number>817789208176</member-serial-number>
+      <member-model>vqfx-10000</member-model>
+      <member-priority>128</member-priority>
+      <member-mixed-mode>N</member-mixed-mode>
+      <member-route-mode>VC</member-route-mode>
+      <member-role>Master*</member-role>
+      <neighbor-list>
+</neighbor-list>
+    </member>
+  </member-list>
+  <next-member-information>
+    <next-member-id>1</next-member-id>
+    <next-fpc-slot>1</next-fpc-slot>
+  </next-member-information>
+</virtual-chassis-information>
+
+
+===== Show interfaces description  =====
+<interface-information style="description">
+  <physical-interface>
+    <name>
+em0
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+up
+</oper-status>
+    <description>
+Management Interface
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em1
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+Uplink to Core Switch
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em2
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+Backup Link
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em3
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+Customer VLAN
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em4
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+Server Network
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em5
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+Unused Interface
+</description>
+  </physical-interface>
+  <physical-interface>
+    <name>
+em6
+</name>
+    <admin-status>
+up
+</admin-status>
+    <oper-status>
+down
+</oper-status>
+    <description>
+WAN Connection
+</description>
+  </physical-interface>
+</interface-information>
+
+
+===== Show Ethernet Switching Table  =====
+<l2ng-l2ald-rtb-macdb>
+</l2ng-l2ald-rtb-macdb>
+
