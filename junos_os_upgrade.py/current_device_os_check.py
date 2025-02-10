@@ -203,5 +203,3 @@ except Exception as e:
 
 finally:
     dev.close()
-
-
