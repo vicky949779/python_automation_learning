@@ -38,8 +38,8 @@
 import re
 
 
-with open('05_Regex/show_version.txt') as ver_data:
-    ver_output =ver_data.read()
+# with open('05_Regex/show_version.txt') as ver_data:
+#     ver_output =ver_data.read()
 # my_pattern =r'Cisco'
 # # re_output =re.search(my_pattern, ver_output) # output is <re.Match object; span=(20, 25), match='Cisco'>  how many matches are tell in between
 # re_output =re.search(my_pattern, ver_output) 
