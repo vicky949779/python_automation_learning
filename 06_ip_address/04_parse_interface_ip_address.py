@@ -72,7 +72,7 @@ def cisco_cmd_exicuter(hostname, commands):
             try:
                 ip = ipaddress.IPv4Address(intf['IP_address'])
                 if ip in ip_subnet:
-                    print(intf['Interface_name'],ip)
+                    print(f"{intf['Interface_name'].ljust(8)}:{ip}")
             except ValueError:
                 continue
 
